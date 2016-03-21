@@ -1,15 +1,11 @@
-class NeighborhoodsController < ApplicationController
+class WorkoutsController < ApplicationController
 
   def index
-    @neighborhoods = Neighborhood.all
+    @workouts = Workout.all
   end
 
   def show
-    @neighborhood = Neighborhood.find(params[:id])
-  end
-
-  def new
-    @neighborhood = Neighborhood.new
+    @workout = Workout.find(params[:id])
   end
 
 end

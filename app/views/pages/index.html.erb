@@ -1,7 +1,12 @@
-<h1>Welcome to Washington!</h1>
-
-<% @neighborhoods.each do |neighborhood| %>
-  <div class="neighborhood">
-    <h2><%= link_to neighborhood.name, neighborhood %></h2>
+<h1>The Best Places to Sweat in D.C.</h1>
+<h2>Everything you need to find the best workout for you!</h2>
+<nav>
+  <li><a href="workouts#index"></a>Types of Workouts</li>
+  <li><a href="places#index"></a>Places to Workout</li>
+  <li><a href="pages#contact"></a>Tell Us More</li>
+</nav>
+<% @workouts.each do |workout| %>
+  <div class="workout">
+    <h2><%= link_to workout.name, workout %></h2>
   </div>
 <% end %>
