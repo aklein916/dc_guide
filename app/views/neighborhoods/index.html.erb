@@ -1,0 +1,6 @@
+<h1>Welcome to the Neighborhood!</h1>
+<% @neighborhoods.each do |neighborhood| %>
+  <div class="neighborhood">
+    <h2><%= link_to neighborhood.name, neighborhood %></h2>
+  <div>
+<% end %>
