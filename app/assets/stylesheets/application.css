@@ -13,6 +13,37 @@
  *= require_tree .
  *= require_self
  */
- body {
+
+
+.mall {
    background-image: url(http://thedistrictinsider.com/wp-content/uploads/2014/04/432-1.jpg);
+   opacity: .7;
+   background-size: cover;
  }
+.workout a {
+  text-decoration: none;
+  color: black; 
+}
+nav {
+  background-color: darkgray;
+  color: white;
+  text-decoration: none;
+  list-style-type: none;
+  height: 60px;
+  font-size: 25px;
+  padding-top: 25px;
+}
+
+li {
+  display: inline;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+li a {
+  text-decoration: none;
+  color: white;
+}
