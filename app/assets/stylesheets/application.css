@@ -13,3 +13,6 @@
  *= require_tree .
  *= require_self
  */
+ body {
+   background-image: url(http://thedistrictinsider.com/wp-content/uploads/2014/04/432-1.jpg);
+ }
