@@ -1,7 +1,7 @@
 <h1>It's time to Work!</h1>
 <% @places.each do |place| %>
   <div>
-    <%= link_to place.name, place.website%> -
+    <%= link_to place.name, place%> -
     <%= place.workout.name %>
   </div>
 <% end %>

@@ -48,3 +48,12 @@ li a {
   text-decoration: none;
   color: white;
 }
+
+img {
+  border-style: solid;
+  border-width: thin;
+  border-color: darkgray;
+  height: 300px;
+  max-width: 800px;
+  margin: 30px;
+}
