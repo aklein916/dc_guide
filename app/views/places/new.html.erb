@@ -1,0 +1,13 @@
+<h2>Add A Studio to Our List!</h2>
+<%= form_for @place do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+
+  <%= f.label :workout %>
+  <%= f.select :workout ['Spin', 'Yoga'] %>
+
+  <%= f.label :photo %>
+  <%= f.text_field :img_url %>
+
+  <%= f.submit %>
+<% end %>

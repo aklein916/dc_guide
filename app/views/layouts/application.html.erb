@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>DcGuide</title>
+  <title>DC Workouts</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
   <nav>
-    <li><a href="workouts#show">Types of Workouts</a></li>
-    <li><a href="places#index">Places to Workout</a></li>
-    <li><a href="workouts#contact">Tell Us More</a></li>
+    <li><%= link_to "Types of Workouts", workouts_path %></li>
+    <li><%= link_to "Places to Workout", places_path %></li>
+    <li><%= link_to "Add A Studio", new_place_path %></li>
   </nav>
 <%= yield %>
 

@@ -12,4 +12,13 @@ class PlacesController < ApplicationController
     @place = Place.new
   end
 
+  def create
+    @place = place.create(place_params)
+    redirect_to place_path(@place)
+  end
+
+  private
+    def place_params
+      params.require(:place).permit(:name, :img_url, :workout)
+    end
 end
