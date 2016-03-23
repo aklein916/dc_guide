@@ -4,4 +4,6 @@
     <h2><%= place.name %></h2>
     <%= image_tag place.img_url %>
   </div>
+
+  <h3>Add a Studio<%= link_to "(+)", new_workout_place_path( @workout ) %></h3>
 <% end %>
