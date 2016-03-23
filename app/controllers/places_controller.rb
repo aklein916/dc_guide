@@ -54,4 +54,3 @@ class PlacesController < ApplicationController
       params.require(:place).permit(:title, :album, :preview_url, :workout_id)
     end
   end
-  Status API Training Shop Blog About

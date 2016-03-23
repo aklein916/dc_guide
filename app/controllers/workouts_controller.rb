@@ -42,4 +42,3 @@ class WorkoutsController < ApplicationController
     params.require(:workout_path).permit(:name, :photo_url, :nationality)
   end
 end
-Status API Training Shop Blog About
