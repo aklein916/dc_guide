@@ -1,11 +1,14 @@
 <h2>Add A Place!</h2>
-<%= form_for @place do |f| %>
+<%= form_for [@workout, @place] do |f| %>
 
   <%= f.label :name %>
   <%= f.text_field :name %>
 
   <%= f.label :photo %>
   <%= f.text_field :img_url %>
+
+  <%= f.label :workout_id %>
+  <%= f.text_field :workout_id %>
 
   <%= f.submit %>
 <% end %>

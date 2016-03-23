@@ -11,24 +11,35 @@ class WorkoutsController < ApplicationController
   def show
     @workout = Workout.find(params[:id])
   end
-
-  # create
+# create
   def create
-    @workout = Workout.create!(workout_params)
+    @workout_path = Workout.create!(workout_path_params)
 
-    redirect_to workout_path(@workout)
+    redirect_to workout_path(@workout_path)
   end
-
+  # edit
+  def edit
+    @workout_path = Workout.find(params[:id])
+  end
   # update
   def update
-    @workout = Workout.find(params[:id])
-    @workout.update(workout_params)
+    @workout_path = Workout.find(params[:id])
+    @workout_path.update(workout_path_params)
 
-    redirect_to workout_path(@workout)
+    redirect_to workout_path(@workout_path)
+  end
+
+  # destroy
+  def destroy
+    @workout_path = Workout.find(params[:id])
+    @workout_path.destroy
+
+    redirect_to workout_path
   end
 
   private
-  def workout_params
-    params.require(:workout).permit(:name, :equipment)
+  def workout_path_params
+    params.require(:workout_path).permit(:name, :photo_url, :nationality)
   end
 end
+Status API Training Shop Blog About
