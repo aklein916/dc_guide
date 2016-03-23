@@ -10,6 +10,7 @@ class WorkoutsController < ApplicationController
 
   def show
     @workout = Workout.find(params[:id])
+    
   end
 # create
   def create
@@ -39,6 +40,6 @@ class WorkoutsController < ApplicationController
 
   private
   def workout_path_params
-    params.require(:workout_path).permit(:name, :photo_url, :nationality)
+    params.require(:workout_path).permit(:name, :photo_url, :equipment)
   end
 end

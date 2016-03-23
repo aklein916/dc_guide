@@ -45,12 +45,11 @@ class PlacesController < ApplicationController
       @workout = Workout.find(params[:workout_id])
       @place = Place.find(params[:id])
       @place.destroy
-
       redirect_to workout_places_path( @workout )
     end
 
     private
     def place_params
-      params.require(:place).permit(:title, :album, :preview_url, :workout_id)
+      params.require(:place).permit(:name, :workout_id)
     end
   end
