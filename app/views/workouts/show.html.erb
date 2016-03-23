@@ -1,6 +1,6 @@
 <h1><%= @workout.name %></h1>
 <div class="add">
-<h3><%= link_to "Add A Studio", new_workout_place_path( @workout ) %></h3>
+  <h3><%= link_to "Add A Studio", new_workout_place_path( @workout ) %></h3>
 </div>
 
 <% @workout.places.each do |place| %>
