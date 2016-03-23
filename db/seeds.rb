@@ -5,7 +5,10 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
-workouts = Workout.create([{name: 'Yoga', equipment: "Mat, Towel, Water" }, {name: 'Pilates/Barre', equipment: 'Mat, Water'}, {name: 'HIT (High-Intensity Training)', equipment: 'varies by studio'}, {name: 'Spin', equipment: 'Water, Cycling shoes (also available to rent at many studios)'}
+workouts = Workout.create([{name: 'Yoga', equipment: "Mat, Towel, Water", intensity: 'http://thedistrictinsider.com/wp-content/uploads/2014/04/432-1.jpg' },
+{name: 'Pilates/Barre', equipment: 'Mat, Water', intensity: 'http://fusepilates.com/wp-content/uploads/2013/01/Home_HeroImages_Strength1.jpg'},
+{name: 'HIT (High-Intensity Training)', equipment: 'varies by studio', intensity: 'https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTMFqd_HpMi3QLT3Uhtr-8h9QYnwqcCmLzgkcuLRqkpfoiEBGaxkw'}, 
+{name: 'Spin', equipment: 'Water, Cycling shoes (also available to rent at many studios)', intensity: 'http://mac.h-cdn.co/assets/15/04/1600x1600/square_nrm_1421954454-mcx-spin-class.jpg'}
 ])
 
 places = Place.create([{name: 'Flow Yoga Center', location: 'Logan Circle', img_url: 'http://www.dmvfollowers.com/wp-content/uploads/2014/07/flow-yoga-center-1.jpg', website: "http://www.flowyogacenter.com", workout_id: 1}, {name: 'Zengo Cycle', location: 'Throughout the DMV', img_url: 'http://www.zengocycle.com/assets/zengocycle/order.GiftCardConfig/ZenGo_600pix.jpg', website: 'http://www.zengocycle.com', workout_id: 4},
