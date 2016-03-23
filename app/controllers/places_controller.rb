@@ -9,7 +9,7 @@ class PlacesController < ApplicationController
   end
 
   def new
-    @place = Place.new
+    @place = Place.new(params[:id])
   end
 
   def create
