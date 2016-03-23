@@ -23,7 +23,7 @@
 .variety a {
   text-decoration: none;
   color: black;
-  opacity: 100%;
+  opacity: 10;
 }
 nav {
   background-color: darkgray;
@@ -56,6 +56,12 @@ img {
   height: 300px;
   max-width: 800px;
   margin: 30px;
+}
+
+
+.add {
+  text-decoration: none;
+  color: black;
 }
 
 .places {
