@@ -1,10 +1,12 @@
 <h1><%= @workout.name %></h1>
 
-<h3>Add a Studio<%= link_to "(+)", new_workout_place_path( @workout ) %></h3>
+<h3><%= link_to "Add A Studio", new_workout_place_path( @workout ) %></h3>
 
 <% @workout.places.each do |place| %>
   <div class="place">
-    <h2><%= place.name %></h2>
+    <h2><%= link_to place.name, place.website %></h2>
+    <h3><%= place.review %> </h3>
+    <h3>Location(s):<%= place.location %> </h3>
     <%= image_tag place.img_url %>
   </div>
 <% end %>
