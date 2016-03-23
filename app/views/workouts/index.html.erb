@@ -1,11 +1,9 @@
 <div class="variety">
   <h1>The Best Places to Sweat in D.C.</h1>
   <h2>Everything you need to find the best workout for you!</h2>
-  <div class="mall">
     <% @workouts.each do |workout| %>
     <div class="workout">
-      <h2><%= link_to workout.name, workout %></h2>
+      <h3><%= link_to workout.name, workout %></h3>
     </div>
     <% end %>
-  </div>
 </div>

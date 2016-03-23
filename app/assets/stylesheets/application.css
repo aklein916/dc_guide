@@ -15,10 +15,8 @@
  */
 
 
-.variety {
-   background-image: url(http://thedistrictinsider.com/wp-content/uploads/2014/04/432-1.jpg);
-   opacity: .7;
-   background-size: cover;
+body {
+   background-color: teal;
  }
 .variety a {
   text-decoration: none;
@@ -38,8 +36,12 @@ li {
   display: inline;
   padding: 20px;
 }
+li:visited {
+  text-decoration: none;
+  color: white
+}
 
-h1 {
+h1, h2{
   text-align: center;
 }
 
