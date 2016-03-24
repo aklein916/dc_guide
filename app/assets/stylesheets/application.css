@@ -14,7 +14,6 @@
  *= require_self
  */
 
-
 /*body {
    background-color: teal;
  }
@@ -73,8 +72,3 @@ img {
   font-weight: bolder;
   margin: 30px;
 }
-
-.places a {
-  text-decoration: none;
-  color: black;
-}*/

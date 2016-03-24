@@ -5,10 +5,10 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
-workouts = Workout.create([{name: 'Yoga', equipment: "Mat, Towel, Water", intensity: 'http://thedistrictinsider.com/wp-content/uploads/2014/04/432-1.jpg' },
-{name: 'Pilates/Barre', equipment: 'Mat, Water', intensity: 'http://fusepilates.com/wp-content/uploads/2013/01/Home_HeroImages_Strength1.jpg'},
-{name: 'HIT (High-Intensity Training)', equipment: 'varies by studio', intensity: 'https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTMFqd_HpMi3QLT3Uhtr-8h9QYnwqcCmLzgkcuLRqkpfoiEBGaxkw'}, 
-{name: 'Spin', equipment: 'Water, Cycling shoes (also available to rent at many studios)', intensity: 'http://mac.h-cdn.co/assets/15/04/1600x1600/square_nrm_1421954454-mcx-spin-class.jpg'}
+workouts = Workout.create([{name: 'Yoga', equipment: "Mat, Towel, Water", intensity: 'http://ecx.images-amazon.com/images/I/41yALRHIWeL._SY355_.jpg' },
+{name: 'Pilates/Barre', equipment: 'Mat, Water', intensity: 'http://images.clipartof.com/small/1248600-Clipart-Of-A-Black-And-White-Heart-Made-Of-Silhouetted-Yoga-And-Pilates-People-Royalty-Free-Vector-Illustration.jpg'},
+{name: 'HIT (High-Intensity Training)', equipment: 'varies by studio', intensity: 'https://s-media-cache-ak0.pinimg.com/736x/2c/7b/b5/2c7bb54c6346db7e4d60e8f8e1755a02.jpg'}, 
+{name: 'Spin', equipment: 'Water, Cycling shoes (also available to rent at many studios)', intensity: 'http://images.clipartpanda.com/spin-off-clipart-bicycle_exercise_clip_art_16631.jpg'}
 ])
 
 places = Place.create([{name: 'Flow Yoga Center', location: 'Logan Circle', img_url: 'http://www.dmvfollowers.com/wp-content/uploads/2014/07/flow-yoga-center-1.jpg', website: "http://www.flowyogacenter.com", workout_id: 1}, {name: 'Zengo Cycle', location: 'Throughout the DMV', img_url: 'http://www.zengocycle.com/assets/zengocycle/order.GiftCardConfig/ZenGo_600pix.jpg', website: 'http://www.zengocycle.com', workout_id: 4},
