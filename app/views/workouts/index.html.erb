@@ -1,7 +1,7 @@
   <!-- Indicators -->
   <div class="carousel-inner" role="listbox">
     <div class="item active">
-      <img class="first-slide" src="https://c1.staticflickr.com/9/8549/8710336395_5c8a6758d3_b.jpg" alt="First slide">
+      <img class="first-slide" src="https://s-media-cache-ak0.pinimg.com/564x/fe/dc/67/fedc67d2069b2fa8e63772da2397bf51.jpg" alt="First slide">
       <div class="container">
         <div class="carousel-caption">
           <h1>The Best Places to Sweat in D.C.</h1>
@@ -18,8 +18,8 @@
     <h2><%= link_to workout.name, workout %></h2>
   <div class="row">
     <div class="col-lg-4">
-      <!-- <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140"> -->
-      <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+      <img class="img-circle" alt="monument" >
+      <%=image_tag @workout.intensity %>  
     </div><!-- /.col-lg-4 -->
   </div>
   <% end %>
