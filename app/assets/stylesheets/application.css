@@ -17,6 +17,11 @@
   padding-bottom: 60px;
   padding-top: 30px;
   border: 2px;
+  column-count: 4;
+  column-rule-width: 400px;
+}
+.container-workouts {
+  text-align: center;
 }
 
 .place {

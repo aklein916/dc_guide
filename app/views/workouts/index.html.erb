@@ -12,13 +12,15 @@
   </div>
   </div><!-- /.carousel -->
 
-  <div class="container workouts">
+  <div class="container-workouts">
   <% @workouts.each do |workout| %>
     <h2><%= link_to workout.name, workout %></h2>
   <div class="row">
+    <div class= "photo">
     <div class="col-lg-4">
       <%= image_tag workout.intensity %>
     </div>
+  </div>
   </div>
   <% end %>
 </div>
